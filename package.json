@@ -4,6 +4,12 @@
   "description": "",
   "version": "0.0.1",
   "publisher": "JhonatanSDelgadoL",
+  "icon": "media/icon.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhonatan30/26counter"
+  },
   "engines": {
     "vscode": "^1.115.0"
   },
