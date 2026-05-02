@@ -1,65 +1,69 @@
-# 26counter README
+# ⚽ 26Counter - Summer 2026 Tournament Countdown
 
-This is the README for your extension "26counter". After writing up a brief description, we recommend including the following sections.
+A VS Code extension that displays a beautiful countdown timer to the major 2026 soccer tournament in your editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Status Bar Countdown**: A live countdown timer in the VS Code status bar that updates every second.
+- **Beautiful Dashboard**: Click the status bar item to open an elegant webview with a detailed countdown display.
+- **Real-time Updates**: Shows days, hours, minutes, and seconds until June 11, 2026.
+- **Themed Colors**: Color-coded display using vibrant colors (yellow, blue, red, and green).
+- **Interactive Dashboard**: Mouse-tracking glow effect on the countdown webview.
+- **Always Visible**: Status bar item is prominently placed to keep the countdown always visible.
 
-For example if there is an image subfolder under your extension project workspace:
+## Installation
 
-\!\[feature X\]\(images/feature-x.png\)
+### From Source
+1. Clone this repository
+2. Run `npm install` to install dependencies
+3. Press `F5` to open a new VS Code window with the extension loaded in development mode
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### From VS Code Marketplace
+*(Once published)*
+- Search for "26Counter" in the Extensions marketplace
+- Click Install
+
+## Usage
+
+1. Once installed and activated, you'll see the countdown timer in the status bar (🏆)
+2. Click the status bar item to open the full countdown dashboard
+3. The timer updates automatically every second
+4. Close the dashboard when you're done by closing the webview panel
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- VS Code version 1.112.0 or higher
 
-## Extension Settings
+## Commands
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+- **⚽ 2026 Soccer Countdown**: Opens the countdown dashboard webview
 
-For example:
+## Configuration
 
-This extension contributes the following settings:
+The extension automatically starts counting down to **June 11, 2026 at 00:00:00** UTC.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Development
 
-## Known Issues
+### Scripts
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- `npm run lint` - Run ESLint to check code quality
+- `npm run test` - Run the test suite
+- `npm run pretest` - Lint before running tests
 
-## Release Notes
+### File Structure
 
-Users appreciate release notes as you update your extension.
+- `extension.js` - Main extension file containing the countdown logic and webview
+- `test/extension.test.js` - Test file
+- `package.json` - Extension metadata and configuration
 
-### 1.0.0
+## License
 
-Initial release of ...
+MIT
 
-### 1.0.1
+## Author
 
-Fixed issue #.
+Jhonatan Delgado (JhonatanSDelgadoL)
 
-### 1.1.0
+## Repository
 
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+https://github.com/jhonatan30/26counter
